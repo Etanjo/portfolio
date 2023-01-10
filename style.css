@@ -1,0 +1,112 @@
+/* color scheme: https://coolors.co/011627-ff0022-cc001b-294251-ffffff*/
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: url('cursor.png') 16 16, auto;
+}
+.header{
+border-bottom: 3px solid #294251;
+  font-family:  'Orbitron', sans-serif;
+  padding-left: 5px;
+  color: #011627;
+}
+
+.homeLink{
+  font-family: 'Exo 2', sans-serif;
+  display: block;
+  color: #CC001B;
+  text-decoration: none;
+  border: 2.5px solid #294251;
+  border-radius: 5px;
+  font-size: 60px;
+  text-align: center;
+  width: 300px;
+}
+
+#hMiddle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 400px;
+}
+.homeLink:hover{
+  transition: all 0.5s;
+  background-color:#687f8d;
+  color: #FF0022;
+}
+.homeLink:active{
+  translate: 3px 5px;
+}
+#design-pages{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "joboffer csszen"
+                        "joboffer csszen";
+}
+#job-offer{
+  grid-area: joboffer;
+  
+}
+#job-offer iframe{
+  height: 100%;
+  width: 100%
+}
+
+#zen-garden{
+  grid-area: csszen;
+}
+.design{
+  height: 900px;
+}
+
+#zen-garden iframe{
+  height: 100%;
+  width: 100%;
+}
+#Ethan{
+  position:absolute;
+  left: 0;
+}
+#me{
+  position: relative;
+  width: 221.5px;
+  height: 295.5px;
+  box-shadow: 11px -8px 8px 3px rgba(204,0,27,0.75);
+  top: 20px;
+  left: 0;
+}
+h2{
+  border-bottom: 3px solid #294251;
+  font-family:  'Orbitron', sans-serif;
+  padding-left: 5px;
+  color: #011627;
+  font-size: 15px;
+}
+h3{
+  font-family:  'Orbitron', sans-serif;
+  color: #011627;
+  font-size: 15px;
+}
+#about{
+  height: auto;
+  display: grid;
+  grid-template-areas:"me about1"
+                      "me about2"
+                      "me about3";
+}
+.hidden{
+  display: none;
+}
+#about .hidden{
+  display: none;
+}
+#incident iframe{
+  width:100%;
+  height: 680px;
+  zoom: 10%;
+}
