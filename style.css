@@ -1,4 +1,4 @@
-/* color scheme: https://coolors.co/011627-ff0022-cc001b-294251-ffffff*/
+  /* color scheme: https://coolors.co/011627-ff0022-cc001b-294251-ffffff*/
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
@@ -68,18 +68,11 @@ border-bottom: 3px solid #294251;
   height: 100%;
   width: 100%;
 }
-#Ethan{
-  position:absolute;
-  left: 0;
-}
 #me{
-  position: relative;
-  width: 221.5px;
-  height: 295.5px;
-  box-shadow: 11px -8px 8px 3px rgba(204,0,27,0.75);
-  top: 20px;
-  left: 0;
+  width: 351px;
+  height: 468.5px;
 }
+
 h2{
   border-bottom: 3px solid #294251;
   font-family:  'Orbitron', sans-serif;
@@ -93,20 +86,92 @@ h3{
   font-size: 15px;
 }
 #about{
-  height: auto;
-  display: grid;
-  grid-template-areas:"me about1"
-                      "me about2"
-                      "me about3";
+  width: 100%;
+  height: 100%;
 }
 .hidden{
   display: none;
 }
-#about .hidden{
+#about.hidden {
   display: none;
 }
 #incident iframe{
   width:100%;
   height: 680px;
   zoom: 10%;
+}
+.headerLink{
+    font-family: 'Exo 2', sans-serif;
+  display: block;
+  color: #CC001B;
+  text-decoration: none;
+  border: 2.5px solid #294251;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  width: 90px;
+}
+.linkSection{
+  display: flex;
+  justify-content: space-between;
+}
+#aboutPage{
+  width: 75%;
+  margin-left: 6.125%;
+  margin-right: 6.125%;
+  display: grid;
+  grid-template-areas: 'info paragraphs'
+                       'info paragraphs'
+                       'info paragraphs';
+  margin-top: 6.125%;
+  border: 3px ridge #CC001B;
+  border-radius: 4px;
+  padding: 6.125%
+}
+#paragraphs{
+  grid-area: paragraphs;
+  margin: 10px;
+}
+#info{
+  grid-area: info;
+}
+p{
+  font-family: 'Exo 2';
+  color: #011627;
+}
+strong{
+  font-family: 'Exo 2';
+  color: #011627;
+}
+li{
+  font-family: 'Exo 2';
+  color: #011627;
+}
+li a{
+  color:#CC001B;
+  text-decoration: none;
+}
+li a::hover{
+  background-color:#294251;
+}
+#gamedisplay{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#draw{
+  width: 700px;
+  height: 700px;
+}
+#range{
+  margin-top: 80px;
+}
+#range a{
+  background-image: url('Shootingrange.png');
+  display: block;
+  width: 1200px;
+  height:800px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }

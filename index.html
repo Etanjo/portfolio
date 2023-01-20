@@ -4,66 +4,94 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Ethan's Portfolio</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <section id = home>
-  <div class = 'header'>
-    <h1>Ethan Matte</h1>
-  </div>
-    <div id = "hMiddle">
-      <a href = "#about" class = "homeLink">About</a>
-      <a href = '#design' class = "homeLink">Design</a>
-      <a href = "#games" class = "homeLink">Games</a>
+  <section id=home>
+    <div class='header'>
+      <h1>Ethan Matte</h1>
+    </div>
+    <div id="hMiddle">
+      <a href="#about" class="homeLink aLink">About</a>
+      <a href='#design' class="homeLink dLink">Design</a>
+      <a href="#games" class="homeLink gLink">Games</a>
     </div>
   </section>
-  <!--
-  <section id = 'about' class = 'hidden'>
-    <div class = 'header'>
-    <h1>Ethan Matte</h1>
-  </div>
-    <div id = Ethan>
-    <img src = "me.png" id = "me">
-      <h2>Ethan Matte
-      <br> Birthday: 10/29
-      </h2>
-    </div>
-    <div class = "about" id = "history">I started coding in my Sophomore year of highschool with JavaScript, and continued throughout Junior year with web design as well. I created many web projects, which can be found at <a href = "https://sunryze-studios.netlify.app/web.html">this link</a>.</div>
-    <div class = "about" id = "desc">Here are descriptions for the projects presented: 
-      <br><strong>The Job Offer:</strong>
-    <br><strong></strong></div>
-    <div class = "about" id ="interests"></div>
-    
-    
-  </section>
-  -->
-  <section id = 'design'class = 'hidden'>
-     <div class = 'header'>
-    <h1>Ethan Matte</h1>
-  </div>
-    <div id = "design-pages">
-      <div id = "job-offer" class = "design">
-        <iframe src = "https://the-job-offer.netlify.app/"></iframe>
-      </div>
-      <div id = "zen-garden" class = "design">
-        <iframe src = "https://iacs-zen-garden.netlify.app/#24-ethan-simple"></iframe>
+
+  <section id='about' class='hidden'>
+    <div class='header'>
+      <h1>Ethan Matte</h1>
+      <div class=linkSection> <a href="#design" class="headerLink dLink">Design</a>
+        <a href='#home' class="headerLink hLink">Home</a>
+        <a href="#games" class="headerLink gLink">Games</a>
       </div>
     </div>
+    <div id=aboutPage>
+      <div id=info>
+        <img src='me.png' id="me">
+        <h3>Ethan Matte
+          <br>Birthday: 10/29
+        </h3>
+        </div>
+      <div id = 'paragraphs'>
+          <p><strong>General Information:</strong> Hello! I'm Ethan, a student at Innovation Academy Charter School. I am set to graduate in 2024. With interests in video games, movies, and music my main goal is to become a game designer. Currently I know HTML, CSS, and JS with hopes to learn C#. Outside of these creative fields, I am interested in esports and ice hockey. </p>
+          <label><strong>Project Descriptions:</strong></label><ul>
+            <li>The Job Offer is a choose your own adventure built entirely with HTML (and a little JS). It takes you through the path of being a young individual who gets a job offer from a mysterious tech company. Do you accept? Find out for your self from the design page.</li>
+            <li>The IACS CSS Zen Garden was a project in which the class was required to make designs for a given HTML file by only altering the CSS file. These designs were compiled into one web page. My simple design, as well as many others can be found on the design page</li>
+            <li>Shooting Range Incident is a simple 2D arcade-esque shooter where you control the character Alpha as he protects himself as well as everyone's favorite bartender, Bart Jenkins. Buy upgrades to survive as long as you can and rack up points to get the top of the leaderboard! A link to this game can be found on the games page.
+            </li>
+            <li>
+              IACS Draw is my first ever web project. Its a simple drawing program that allows you to draw on a blank canvas, or on the faces of those you might know. Seriously, type Dwayne into the secret code bar. Head over to the games tab for some quick artistic fun.
+            </li>
+            <li>
+              For more web projects, check out this webpage: <a href = 'https://sunryze-studios.netlify.app/web.html' target = '_blank'>Sunryze Studios</a>
+            </li>
+          </ul>
+      </div>
+    </div>
   </section>
-  <section id = games>
-    <div class = 'header'>
-    <h1>Ethan Matte</h1>
-  </div>
-    <div id = "incident">
-    <h3>Shooting Range Incident</h3>
-      <iframe src = "https://shooting-range-incident.netlify.app/">
+
+  <section id='design' class="hidden">
+    <div class='header'>
+      <h1>Ethan Matte</h1>
+      <div class=linkSection>
+        <a href="#about " class="headerLink aLink">About</a>
+        <a href='#home' class="headerLink hLink">Home</a>
+        <a href="#games" class="headerLink gLink">Games</a>
+      </div>
+    </div>
+    <div id="design-pages">
+      <div id="job-offer" class="design">
+        <iframe src="https://the-job-offer.netlify.app/"></iframe>
+      </div>
+      <div id="zen-garden" class="design">
+        <iframe src="https://iacs-zen-garden.netlify.app/#24-ethan-simple"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id='games' class='hidden'>
+    <div class='header'>
+      <h1>Ethan Matte</h1>
+      <div class=linkSection> <a href="#about" class="headerLink aLink">About</a>
+        <a href='#home' class="headerLink hLink">Home</a>
+        <a href="#design" class="headerLink dLink">Design</a>
+      </div>
+    </div>
+    <div id = "gamedisplay">
+    <div id = "draw">
+<label>IACS Draw: </label><iframe src = 'https://iacs-draw.netlify.app/' id = draw></iframe>
+    </div> 
+      <div id = range>
+        <label>Shooting Range Incident:</label><a href = 'https://shooting-range-incident.netlify.app/' target = '_blank'></a>
+      </div>
     </div>
   </section>
   <script src="script.js"></script>
 
- 
+
 </body>
 
 </html>
